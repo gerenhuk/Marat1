@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.wrapper {
+    min-height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.logo {
+    height: 50px;
+    color: #000;
+}
+
+.nav__img {
+    border-radius: 16px;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu__link {
+    color: #000;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.section__name {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.propaganda__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.charts__block {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.propaganda__item {
+    height: 410px;
+
+    &:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.steam__page {
+    margin-top: auto;
+
+    border: 1px solid #000;
+    padding-left: 20px;
+
+    position: relative;
+    border-radius: 100px;
+}
+
+.steam__link {
+    /* background: red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.steam__page__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+
+    border-radius: 100%;
+    transform: rotate(-45deg);
+    background: #000;
+    color: #fff;
+}
+
+.chart__number {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.chart__text {
+    font-size: 20px;
+}
+
+.section__name {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.enemies__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+    &:first-child {
+        background: #F9D02C;
+
+        .termit {
+            height: 400px;
+        }
+    }
+}
+
+.enemies__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.automaton {
+    width: 100%;
+}
+
+.enemies__name {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #66c0f4;
+}
+
+.enemies__btn {
+    width: 200px;
+    background: #000;
+    display: block;
+
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.soldier__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "rifle rifle armor grenades grenades"
+        "lasers lasers armor earth earth";
+    width: 100%;
+    height: 500px;
+}
+
+.soldier__grid div {
+    /* background: red; */
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    border: 2px solid #000;
+}
+
+.grenades {
+    grid-area: grenades;
+}
+
+.rifle {
+    grid-area: rifle;
+}
+
+.armor {
+    grid-area: armor;
+    position: relative;
+}
+
+.armor .weapor__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.earth {
+    grid-area: earth;
+    overflow: hidden;
+    position: relative;
+}
+
+.earth img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lasers {
+    grid-area: lasers;
+}
+
+.weapor__name {
+    margin-bottom: 20px;
+}
+
+.reviews__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviews__item__1 {
+    background: url(https://i.pinimg.com/564x/87/d9/13/87d9134087b298b7bce3be3b369dac60.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.reviews__text {
+    font-size: 20px;
+}
+
+.reviews__text:first-child {
+    margin-bottom: 20px;
+}
+
+.reviews__name {
+    margin: 0 auto;
+    width: 500px;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #01212F;
+    text-align: center;
+    color: #fff;
+}
+
+.footer__logo{
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.footer__title {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.social__block {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social__link {
+    color: #fff;
+    font-size: 24px;
+}
